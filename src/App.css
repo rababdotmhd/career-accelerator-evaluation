@@ -1,38 +1,103 @@
-.App {
+* {
+  list-style-type: none;
+  font-family: 'Poppins';
+}
+.header {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 350px;
   text-align: center;
 }
 
+.left-nav {
+  margin-left: 100px;
+}
+
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pages {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.mode {
+  width: 25px;
+}
+
+.profile {
+  width: 25px;
+}
+
+.profile-div {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background-color: #CAF1EF ;
+  font-weight: 500;
+  font-size: x-small;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
+  padding: 2% 5% 0 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-name {
+  margin-top: 7.5%;
+  color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagelink:hover {
+  color: #50D2C9;
+}
+
+.home {
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
+}
+
+.prompt {
+  font-weight: 600;
+  font-size:xx-large;
+  margin-top: 150px;
+}
+
+.input {
+  border-radius: 5%;
+  background-color: #CAF1EF;
+  Opacity: 45%;
+  border-style: none;
+  width: 500px;
+  height: 40px;
+  padding-left: 1%;
+  font-weight: 500;
+  margin-top: 50px;
+  font-size: x-small;
+}
+
+.grab {
+  background-color: #CAF1EF;
+  Opacity: 45%;
+  border-style: none;
+  width: 500px;
+  height: 40px;
+}
+
+.result {
+  margin-top: 25px;
+  background-color: #FFF0D1;
+  width: 475px;
+  justify-content: center;
+  padding: 1.5%;
+  border-radius: 2%;
 }

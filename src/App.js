@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import react from "react";
+import logo from "./logo.png";
+import mode from "./mode.png";
+import profile from "./profile.png";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    
+      <div className="header">
+        <li className="left-nav">
+          <img src={logo} className="App-logo" alt="logo" />
+        </li>
+        <li className="pages">
+          <li className="pagelink">HOME</li>
+          <li className="pagelink">JOKES</li>
+          <li className="pagelink">ABOUT</li>
+        </li>
+        <li className="right-nav">
+          <li>
+            <img src={mode} className="mode" alt="mode" />
+          </li>
+          <li className="profile-div">
+            <li className="profile-name">PROFILE</li>
+            <li>
+              <img src={profile} className="profile" alt="profile" />
+            </li>
+          </li>
+        </li>
+      </div>
+      <div className="Home">
+        <center>
+          <div className="prompt">
+            <li>Predict the gender of </li>
+            <li>a person based on your name.</li>
+          </div>
+          <div>
+            <input
+              className="input"
+              type="text"
+              placeholder="Enter Your Name"
+            />
+          </div>          
+          <div className="result" id="result">
+            <p>THERE IS NO ENOUGH INFORMATION.</p>
+          </div>
+        </center>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
